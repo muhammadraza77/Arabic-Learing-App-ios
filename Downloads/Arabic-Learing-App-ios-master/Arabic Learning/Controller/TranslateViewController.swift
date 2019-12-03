@@ -34,17 +34,20 @@ class TranslateViewController:UIViewController,UITextViewDelegate{
     
     
     @IBAction func SwapLanguageButtonPressed(_ sender: Any) {
+        
         if (translateFromEnglish == true){
             translateFromEnglish = false
             FromLanguageLabel.text = "Arabic"
             ToLanguageLabel.text = "English"
-            InputTextView.text = "اكتب جمله في العربي"
+            InputTextView.textColor = UIColor.lightGray
+            InputTextView.text = "......... اكتب جملة باللغة الإنجليزية "
         }
         else if(translateFromEnglish==false){
             translateFromEnglish = true
             FromLanguageLabel.text = "English"
             ToLanguageLabel.text = "Arabic"
-            InputTextView.text = "Enter Sentence in English........."
+            InputTextView.text = "Write a Sentence in English........."
+            InputTextView.textColor = UIColor.lightGray
         }
     }
     
@@ -104,7 +107,7 @@ class TranslateViewController:UIViewController,UITextViewDelegate{
             InputTextView.text = "Enter Sentence in English"
             }
             else{
-                InputTextView.text = "اكتب جمله في العربي"
+                InputTextView.text = "......... اكتب جملة باللغة الإنجليزية "
             }
             InputTextView.textColor = UIColor.lightGray
         }

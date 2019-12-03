@@ -17,8 +17,4 @@ pod 'YouTubePlayer-Swift', '~> 1.0'
 pod 'Kingfisher'
 pod 'MessageKit'
 
-pod 'FacebookCore'
-pod 'FacebookLogin'
-pod 'FacebookShare'
-
 end

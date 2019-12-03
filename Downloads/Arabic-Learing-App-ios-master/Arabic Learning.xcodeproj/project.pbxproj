@@ -70,6 +70,8 @@
 		92CE36F3235899BB00AF0325 /* Sentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CE36F2235899BB00AF0325 /* Sentence.swift */; };
 		92D5F16E2391A70800CFC8B6 /* send.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 92D5F16D2391A70800CFC8B6 /* send.mp3 */; };
 		92D5F1702391A72500CFC8B6 /* recieve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 92D5F16F2391A72500CFC8B6 /* recieve.mp3 */; };
+		92DBD7D92397006B00FDB5F6 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 92DBD7D82397006B00FDB5F6 /* ProgressHUD.bundle */; };
+		92DBD7DC2397007F00FDB5F6 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DBD7DA2397007E00FDB5F6 /* ProgressHUD.m */; };
 		92DFDAE62372A1F10037A1AB /* SentenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DFDAE42372A1F10037A1AB /* SentenceCell.swift */; };
 		92DFDAE72372A1F10037A1AB /* SentenceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92DFDAE52372A1F10037A1AB /* SentenceCell.xib */; };
 		92E48D8B23670EC900A386AA /* 0035.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 92E48D6723670EC600A386AA /* 0035.mp3 */; };
@@ -108,8 +110,6 @@
 		92E48DAC23670EC900A386AA /* 0013.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 92E48D8823670EC800A386AA /* 0013.mp3 */; };
 		92E48DAD23670EC900A386AA /* 0018.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 92E48D8923670EC800A386AA /* 0018.mp3 */; };
 		92E48DAE23670EC900A386AA /* 0027.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 92E48D8A23670EC800A386AA /* 0027.mp3 */; };
-		92E84BF22394CB9300C8D063 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E84BF02394CB9300C8D063 /* ProgressHUD.m */; };
-		92E84BF32394CB9300C8D063 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 92E84BF12394CB9300C8D063 /* ProgressHUD.bundle */; };
 		92E84BF52395068200C8D063 /* ForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E84BF42395068200C8D063 /* ForgetViewController.swift */; };
 		92ED9AF6237D2DCD00F64351 /* VideoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED9AF5237D2DCD00F64351 /* VideoListController.swift */; };
 		92ED9AF8237D2DEC00F64351 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED9AF7237D2DEC00F64351 /* Video.swift */; };
@@ -184,6 +184,10 @@
 		92CE36F2235899BB00AF0325 /* Sentence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentence.swift; sourceTree = "<group>"; };
 		92D5F16D2391A70800CFC8B6 /* send.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = send.mp3; sourceTree = "<group>"; };
 		92D5F16F2391A72500CFC8B6 /* recieve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = recieve.mp3; sourceTree = "<group>"; };
+		92DBD7D82397006B00FDB5F6 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ProgressHUD.bundle; path = ../../../../.Trash/ProgressHUD.bundle; sourceTree = "<group>"; };
+		92DBD7DA2397007E00FDB5F6 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgressHUD.m; path = ../../../../.Trash/ProgressHUD.m; sourceTree = "<group>"; };
+		92DBD7DB2397007F00FDB5F6 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressHUD.h; path = ../../../../.Trash/ProgressHUD.h; sourceTree = "<group>"; };
+		92DBD7DD239700CD00FDB5F6 /* Arabic Learning-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Arabic Learning-Bridging-Header.h"; sourceTree = "<group>"; };
 		92DFDAE42372A1F10037A1AB /* SentenceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceCell.swift; sourceTree = "<group>"; };
 		92DFDAE52372A1F10037A1AB /* SentenceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SentenceCell.xib; sourceTree = "<group>"; };
 		92E48D6723670EC600A386AA /* 0035.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0035.mp3; sourceTree = "<group>"; };
@@ -222,10 +226,6 @@
 		92E48D8823670EC800A386AA /* 0013.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0013.mp3; sourceTree = "<group>"; };
 		92E48D8923670EC800A386AA /* 0018.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0018.mp3; sourceTree = "<group>"; };
 		92E48D8A23670EC800A386AA /* 0027.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0027.mp3; sourceTree = "<group>"; };
-		92E84BEE2394CB8000C8D063 /* Arabic Learning-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Arabic Learning-Bridging-Header.h"; sourceTree = "<group>"; };
-		92E84BEF2394CB9300C8D063 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressHUD.h; path = ../../../../.Trash/ProgressHUD.h; sourceTree = "<group>"; };
-		92E84BF02394CB9300C8D063 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgressHUD.m; path = ../../../../.Trash/ProgressHUD.m; sourceTree = "<group>"; };
-		92E84BF12394CB9300C8D063 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ProgressHUD.bundle; path = ../../../../.Trash/ProgressHUD.bundle; sourceTree = "<group>"; };
 		92E84BF42395068200C8D063 /* ForgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewController.swift; sourceTree = "<group>"; };
 		92ED9AF5237D2DCD00F64351 /* VideoListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListController.swift; sourceTree = "<group>"; };
 		92ED9AF7237D2DEC00F64351 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
@@ -346,10 +346,10 @@
 		92D5F16623919ACE00CFC8B6 /* Other files */ = {
 			isa = PBXGroup;
 			children = (
-				92E84BEE2394CB8000C8D063 /* Arabic Learning-Bridging-Header.h */,
-				92E84BF12394CB9300C8D063 /* ProgressHUD.bundle */,
-				92E84BEF2394CB9300C8D063 /* ProgressHUD.h */,
-				92E84BF02394CB9300C8D063 /* ProgressHUD.m */,
+				92DBD7DD239700CD00FDB5F6 /* Arabic Learning-Bridging-Header.h */,
+				92DBD7DB2397007F00FDB5F6 /* ProgressHUD.h */,
+				92DBD7DA2397007E00FDB5F6 /* ProgressHUD.m */,
+				92DBD7D82397006B00FDB5F6 /* ProgressHUD.bundle */,
 				92D5F16D2391A70800CFC8B6 /* send.mp3 */,
 				92D5F16F2391A72500CFC8B6 /* recieve.mp3 */,
 			);
@@ -545,7 +545,7 @@
 				92E48D9623670EC900A386AA /* 0025.mp3 in Resources */,
 				92E48D9223670EC900A386AA /* 0034.mp3 in Resources */,
 				92E48DA823670EC900A386AA /* 0008.mp3 in Resources */,
-				92E84BF32394CB9300C8D063 /* ProgressHUD.bundle in Resources */,
+				92DBD7D92397006B00FDB5F6 /* ProgressHUD.bundle in Resources */,
 				92602A422393F59100B916DB /* 0055.mp3 in Resources */,
 				92DFDAE72372A1F10037A1AB /* SentenceCell.xib in Resources */,
 				92602A3B2393F59100B916DB /* 0053.mp3 in Resources */,
@@ -654,9 +654,9 @@
 				9228BA07237C812600D615BC /* SentViewController.swift in Sources */,
 				928A986C235EEEE00054C8A3 /* MessageCell.swift in Sources */,
 				928A986F235EF1AA0054C8A3 /* ChatViewController.swift in Sources */,
+				92DBD7DC2397007F00FDB5F6 /* ProgressHUD.m in Sources */,
 				9217E75D2353791A00BCE86F /* LoginViewController.swift in Sources */,
 				92ABE4422383198B003D3E5E /* TranslateViewController.swift in Sources */,
-				92E84BF22394CB9300C8D063 /* ProgressHUD.m in Sources */,
 				9262B84723576B31007AF044 /* CatogeryViewController.swift in Sources */,
 				92A66B8B236305AB00EDC62C /* Users.swift in Sources */,
 				92E84BF52395068200C8D063 /* ForgetViewController.swift in Sources */,
@@ -814,9 +814,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2AB5HGL5F5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Arabic Learning/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -837,9 +837,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2AB5HGL5F5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Arabic Learning/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

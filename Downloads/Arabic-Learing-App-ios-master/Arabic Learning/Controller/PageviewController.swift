@@ -14,6 +14,8 @@ class PageViewController: UIViewController{
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var labeltext: UILabel!
     
+    @IBOutlet weak var progressBar: UIView!
+    
     var count = 0
     var imagearray = ["card1","card2","card3","card4"]
     var textarray = ["Use our Translation feature to translate from eng-to-arabic and from arabic-to-eng, and get a chance to query your understandings of language",
@@ -22,6 +24,7 @@ class PageViewController: UIViewController{
                     "Chat with other users to practice arabic language and help us build a better community"]
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
     }
     override func viewDidDisappear(_ animated: Bool) {
@@ -39,6 +42,7 @@ class PageViewController: UIViewController{
         }else{
             imageView.image = UIImage (named: imagearray[count])
             labeltext.text = textarray[count]
+                      progressBar.frame.size.width = (view.frame.size.width/4) * CGFloat (count+1)
         }
         
     }
@@ -47,14 +51,14 @@ class PageViewController: UIViewController{
     @IBAction func previousButton(_ sender: Any) {
         print("****1")
         count=count-1
-        print("cc \(count - 1)")
-        if (count <= 0){
+        if (count < 0){
             count=0
             
         }
         else{
             imageView.image = UIImage (named: imagearray[count])
             labeltext.text = textarray[count]
+                      progressBar.frame.size.width = (view.frame.size.width/4) * CGFloat (count+1)
         }
     }
 }
